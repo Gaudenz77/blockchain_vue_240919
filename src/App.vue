@@ -56,11 +56,11 @@ const handleBlockchainUpdate = (currency: keyof Blockchains, updatedBlockchain: 
 </script>
 
 <template>
-  <div class="flex flex-row gap-4">
+  <!-- <div class="flex flex-row gap-4">
     <div class="bg-orange-500 w-1/3 *:p-12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
     <div class="bg-red-500 w-1/3 p-12">Lorem ipsum dolor sit.</div>
     <div class="bg-purple-500 w-1/3 p-12">Lorem ipsum dolor sit amet consectetur.</div>
-  </div>
+  </div> -->
 
   <div class="lg:w-2/3 w-full mt-6 lg:mt-0 p-4 rounded shadow-lg ">
     <h1>Blockchain App</h1>
