@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body data-theme="">
+    <nav class="bg-gray-900 pt-4 fixed top-0 w-full">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <a href="#" class="text-white flex items-center">
+          <img src="/src/assets/img/KDS_Logo_01_FB.png" alt="Logo" class="w-8 h-8 mr-2" />
+          <span class="font-bold text-3xl">POORCOIN BASED V 1.0</span>
+        </a>
+        <div>
+          <ul class="flex space-x-4 mt-5">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Profile</a></li>
+            <li><a href="#" class="text-white">Account</a></li>
+            <li>
+              <select id="themeSelect" class="select select-info relative bottom-[0.8rem]">
+                <option value="dark">Dark Mode</option>
+                <option value="light">Light Mode</option>
+                <option value="cyberpunk">Cyberpunk Mode</option>
+                <option value="luxury">Luxury Mode</option>
+                <option value="cupcake">Cupcake Mode</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="app"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const themeSelect = document.getElementById('themeSelect');
+
+  // Listen for dropdown change
+  themeSelect.addEventListener('change', function () {
+    const selectedTheme = this.value;
+    document.documentElement.setAttribute('data-theme', selectedTheme);
+  });
+});
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
